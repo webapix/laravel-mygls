@@ -103,6 +103,10 @@ PF.: 941
 1535 Budapest   
 Hungary
 
+## Support us
+
+If you find our packages useful and would like to support our work in maintaining and regularly updating them, consider becoming a patron. Any size of donation is welcome and highly appreciated.
+
 ## Contributing
 
 Contributions are welcome! When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
