@@ -1,5 +1,5 @@
 # Laravel MyGLS JSON REST API
-[![Build Status](https://travis-ci.com/webapix/laravel-mygls.svg?branch=master)](https://travis-ci.com/webapix/laravel-mygls)
+[![Tests](https://github.com/webapix/laravel-mygls/workflows/Tests/badge.svg)](https://github.com/webapix/laravel-mygls/actions?query=workflow%3ATests+branch%3Amaster)
 [![StyleCI](https://github.styleci.io/repos/295681631/shield?branch=master)](https://github.styleci.io/repos/295681631?branch=master)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
@@ -99,8 +99,8 @@ According to the postcardware concept, if you use the software for your project(
 Please send it to:
 
 WEBAPIX KFT.   
-PF.: 941   
-1535 Budapest   
+Hűvösvölgyi út 54. 2.ép 3.emelet   
+1021 Budapest   
 Hungary
 
 ## Support us
