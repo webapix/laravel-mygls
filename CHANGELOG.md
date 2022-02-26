@@ -2,6 +2,10 @@
 
 All notable changes to `mygls-sdk` will be documented in this file
 
+# 1.2.0 - 2022-02-26
+
+- add support for Laravel 9
+
 # 1.1.0 - 2022-01-03
 
 - add support for PHP 8.1
