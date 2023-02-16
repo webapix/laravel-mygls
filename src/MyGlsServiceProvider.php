@@ -8,7 +8,7 @@ use Webapix\GLS\Client as GlsClient;
 
 class MyGlsServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         $this->mergeConfigFrom(__DIR__.'/../config/my-gls.php', 'my-gls');
 
