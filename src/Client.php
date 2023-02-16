@@ -5,6 +5,7 @@ namespace Webapix\GLS\Laravel;
 use Webapix\GLS\Client as GlsClient;
 use Webapix\GLS\Contracts\Account as AccountContract;
 use Webapix\GLS\Contracts\Request;
+use Webapix\GLS\Contracts\Response;
 use Webapix\GLS\Models\Account;
 
 class Client
@@ -42,7 +43,7 @@ class Client
         return $this;
     }
 
-    public function request(Request $request)
+    public function request(Request $request): Response
     {
         return $this->client->request($request);
     }
