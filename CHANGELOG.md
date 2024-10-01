@@ -2,6 +2,10 @@
 
 All notable changes to `mygls-sdk` will be documented in this file
 
+# 1.4.0 - 2024-10-01
+
+- add support for Laravel 11
+
 # 1.3.0 - 2023-02-14
 
 - add support for Laravel 10
