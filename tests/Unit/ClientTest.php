@@ -3,6 +3,7 @@
 namespace Webapix\GLS\Laravel\Tests\Unit;
 
 use Mockery as m;
+use PHPUnit\Framework\Attributes\Test;
 use Webapix\GLS\Contracts\Request;
 use Webapix\GLS\Laravel\AccountNotFoundException;
 use Webapix\GLS\Laravel\Client;
@@ -28,6 +29,7 @@ class ClientTest extends TestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_set_the_account_object()
     {
         $account = new Account(
@@ -47,6 +49,7 @@ class ClientTest extends TestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_set_the_account_by_config()
     {
         config(['my-gls.accounts.new' => [
@@ -69,6 +72,7 @@ class ClientTest extends TestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_perform_a_request()
     {
         $this->mockClient->shouldReceive('request')
@@ -81,6 +85,7 @@ class ClientTest extends TestCase
     }
 
     /** @test */
+    #[Test]
     public function it_throw_an_exception_if_account_not_found()
     {
         $this->expectException(AccountNotFoundException::class);
