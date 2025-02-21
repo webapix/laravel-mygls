@@ -2,6 +2,10 @@
 
 All notable changes to `mygls-sdk` will be documented in this file
 
+# 2.0.0 - 2025-02-21
+
+- Upgraded webapix/mygls-sdk to 3.0.
+
 # 1.4.0 - 2024-10-01
 
 - add support for Laravel 11
