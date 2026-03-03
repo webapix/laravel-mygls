@@ -28,6 +28,14 @@ class Client
             throw new AccountNotFoundException('Account ['.$account.'] not found!');
         }
 
+        foreach (['api_url', 'client_number', 'username', 'password'] as $key) {
+            if (empty($accountConfig[$key])) {
+                throw new \InvalidArgumentException(
+                    "Account [{$account}] is missing required key: [{$key}]."
+                );
+            }
+        }
+
         return $this->onAccount(new Account(
             $accountConfig['api_url'],
             $accountConfig['client_number'],
@@ -38,7 +46,7 @@ class Client
 
     public function onAccount(AccountContract $account): self
     {
-        tap($this->client)->on($account);
+        $this->client->on($account);
 
         return $this;
     }

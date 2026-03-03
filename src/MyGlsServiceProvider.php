@@ -8,13 +8,9 @@ use Webapix\GLS\Client as GlsClient;
 
 class MyGlsServiceProvider extends ServiceProvider
 {
-    public function boot(): void
+    public function register(): void
     {
         $this->mergeConfigFrom(__DIR__.'/../config/my-gls.php', 'my-gls');
-
-        $this->publishes([
-            __DIR__.'/../config/my-gls.php' => config_path('my-gls.php'),
-        ], 'config');
 
         $this->app->bind(Client::class, function () {
             $client = new Client(new GlsClient(new HttpClient()));
@@ -25,5 +21,12 @@ class MyGlsServiceProvider extends ServiceProvider
 
             return $client->on('default');
         });
+    }
+
+    public function boot(): void
+    {
+        $this->publishes([
+            __DIR__.'/../config/my-gls.php' => config_path('my-gls.php'),
+        ], 'config');
     }
 }

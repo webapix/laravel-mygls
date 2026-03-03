@@ -43,7 +43,7 @@ $request = new GetParcelStatuses(12345678);
 $response = app(\Webapix\GLS\Laravel\Client::class)->request($request);
 // Or use the facade: $response = MyGls::request($request);
 
-if ($response->successfull()) {
+if ($response->successful()) {
 
     /** @var \Webapix\GLS\Models\ParcelStatus[] */
     $parcelStatusList = $response->parcelStatusList();
