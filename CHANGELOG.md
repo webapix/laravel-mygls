@@ -6,6 +6,7 @@ All notable changes to `mygls-sdk` will be documented in this file
 
 - Add PHP 8.4 and 8.5 support
 - Fix PHP version constraint (`^8.1` minimum, drop `^7.2|^8.0`)
+- Drop support for Laravel 6, 7, 8, and 9
 - Move `mergeConfigFrom()` and container binding to `register()` in `MyGlsServiceProvider`
 - Add config key validation with descriptive `InvalidArgumentException` in `Client::on()`
 - Remove unnecessary `tap()` wrapper in `Client::onAccount()`
