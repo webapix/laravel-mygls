@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @method static \Webapix\GLS\Laravel\Client on(string $account)
  * @method static \Webapix\GLS\Laravel\Client onAccount(\Webapix\GLS\Contracts\Account $account)
- * @method static \Webapix\GLS\Contracts\Response request(\Webapix\GLS\Contracts\Request $account)
+ * @method static \Webapix\GLS\Contracts\Response request(\Webapix\GLS\Contracts\Request $request)
  */
 class MyGls extends Facade
 {

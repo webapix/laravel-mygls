@@ -2,6 +2,20 @@
 
 All notable changes to `mygls-sdk` will be documented in this file
 
+# 2.1.0 - 2026-03-03
+
+- Add PHP 8.4 and 8.5 support
+- Fix PHP version constraint (`^8.1` minimum, drop `^7.2|^8.0`)
+- Drop support for Laravel 6, 7, 8, and 9
+- Move `mergeConfigFrom()` and container binding to `register()` in `MyGlsServiceProvider`
+- Add config key validation with descriptive `InvalidArgumentException` in `Client::on()`
+- Remove unnecessary `tap()` wrapper in `Client::onAccount()`
+- Fix docblock parameter name in `MyGls` facade (`$account` → `$request`)
+- Update PHPUnit XML schema to 11.5, remove deprecated attributes
+- Update GitHub Actions to `actions/checkout@v4`
+- Add `composer audit` step to CI workflow
+- Fix typo in README (`successfull()` → `successful()`)
+
 # 2.0.0 - 2025-02-21
 
 - Upgraded webapix/mygls-sdk to 3.0.
