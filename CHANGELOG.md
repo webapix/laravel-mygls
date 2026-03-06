@@ -1,8 +1,8 @@
 # Changelog
 
-All notable changes to `mygls-sdk` will be documented in this file
+All notable changes to `laravel-mygls` will be documented in this file
 
-# 2.1.0 - 2026-03-03
+# 3.1.0 - 2026-03-03
 
 - Add PHP 8.4 and 8.5 support
 - Fix PHP version constraint (`^8.1` minimum, drop `^7.2|^8.0`)
@@ -15,6 +15,10 @@ All notable changes to `mygls-sdk` will be documented in this file
 - Update GitHub Actions to `actions/checkout@v4`
 - Add `composer audit` step to CI workflow
 - Fix typo in README (`successfull()` → `successful()`)
+
+# 3.0.0 - 2025-04-22
+
+- Add Laravel 12 support
 
 # 2.0.0 - 2025-02-21
 
