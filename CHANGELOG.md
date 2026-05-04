@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-mygls` will be documented in this file
 
+# 3.2.0 - 2026-05-04
+
+- Add Laravel 13 support
+- Add `orchestra/testbench` `^11.0` to dev requirements
+- Update CI matrix to test against Laravel 13 on PHP 8.3, 8.4, and 8.5
+
 # 3.1.0 - 2026-03-03
 
 - Add PHP 8.4 and 8.5 support
